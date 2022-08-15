@@ -1,0 +1,534 @@
+﻿++Solution '2d dungeon' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:2d dungeon.sln
+++Assembly-CSharp
+i:{00000000-0000-0000-0000-000000000000}:Assembly-CSharp
+++References
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Assets
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\
+++screens
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\screens\
+++Scripts
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\
+++camera
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\camera\
+++colliders
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\colliders\
+++Player
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\player\
+++attack
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\player\attack\
+++playermovement.cs
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\player\playermovement.cs
+++smoothplayermovement.cs
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\player\smoothplayermovement.cs
+++utils
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\utils\
+++jsonconverter.cs
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\utils\jsonconverter.cs
+++publicvariables.cs
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\publicvariables.cs
+++TextMesh Pro
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\
+++Microsoft.Win32.Primitives
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++mscorlib
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++netstandard
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++PsdPlugin
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.AppContext
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Collections
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Collections.Concurrent
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Collections.NonGeneric
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Collections.Specialized
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.ComponentModel
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.ComponentModel.Composition
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.ComponentModel.EventBasedAsync
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.ComponentModel.Primitives
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.ComponentModel.TypeConverter
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Console
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Core
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Data
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Data.Common
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Diagnostics.Contracts
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Diagnostics.Debug
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Diagnostics.FileVersionInfo
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Diagnostics.Process
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Diagnostics.StackTrace
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Diagnostics.TextWriterTraceListener
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Diagnostics.Tools
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Diagnostics.TraceSource
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Diagnostics.Tracing
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Drawing
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Drawing.Primitives
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Dynamic.Runtime
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Globalization
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Globalization.Calendars
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Globalization.Extensions
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.Compression
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.Compression.FileSystem
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.Compression.ZipFile
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.FileSystem
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.FileSystem.DriveInfo
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.FileSystem.Primitives
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.FileSystem.Watcher
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.IsolatedStorage
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.MemoryMappedFiles
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.Pipes
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.IO.UnmanagedMemoryStream
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Linq
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Linq.Expressions
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Linq.Parallel
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Linq.Queryable
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.Http
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.NameResolution
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.NetworkInformation
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.Ping
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.Primitives
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.Requests
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.Security
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.Sockets
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.WebHeaderCollection
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.WebSockets
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Net.WebSockets.Client
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Numerics
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Numerics.Vectors
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.ObjectModel
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Reflection
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Reflection.Extensions
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Reflection.Primitives
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Resources.Reader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Resources.ResourceManager
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Resources.Writer
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.CompilerServices.VisualC
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.Extensions
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.Handles
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.InteropServices
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.InteropServices.RuntimeInformation
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.InteropServices.WindowsRuntime
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.Numerics
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.Serialization
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.Serialization.Formatters
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.Serialization.Json
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.Serialization.Primitives
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Runtime.Serialization.Xml
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Security.Claims
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Security.Cryptography.Algorithms
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Security.Cryptography.Csp
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Security.Cryptography.Encoding
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Security.Cryptography.Primitives
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Security.Cryptography.X509Certificates
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Security.Principal
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Security.SecureString
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.ServiceModel.Web
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Text.Encoding
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Text.Encoding.Extensions
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Text.RegularExpressions
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Threading
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Threading.Overlapped
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Threading.Tasks
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Threading.Tasks.Parallel
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Threading.Thread
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Threading.ThreadPool
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Threading.Timer
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Transactions
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.ValueTuple
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Web
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Windows
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Xml
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Xml.Linq
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Xml.ReaderWriter
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Xml.Serialization
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Xml.XDocument
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Xml.XmlDocument
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Xml.XmlSerializer
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Xml.XPath
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++System.Xml.XPath.XDocument
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.Animation.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.Animation.Runtime
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.Animation.Triangle.Runtime
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.Common.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.Common.Runtime
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.IK.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.IK.Runtime
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.Path.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.PixelPerfect
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.PixelPerfect.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.Psdimporter.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.Sprite.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.SpriteShape.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.SpriteShape.Runtime
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.2D.Tilemap.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.InternalAPIEditorBridge.001
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.InternalAPIEngineBridge.001
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.Mathematics
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.Mathematics.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.PlasticSCM.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.Rider.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.TextMeshPro
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.TextMeshPro.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.Timeline
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.Timeline.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.VisualStudio.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++Unity.VSCode.Editor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEditor
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEditor.CoreModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEditor.GraphViewModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEditor.PackageManagerUIModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEditor.SceneTemplateModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEditor.UI
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEditor.UIElementsModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEditor.UIElementsSamplesModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEditor.UIServiceModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEditor.UnityConnectModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.AccessibilityModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.AIModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.AndroidJNIModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.AnimationModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.ARModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.AssetBundleModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.AudioModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.ClothModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.ClusterInputModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.ClusterRendererModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.CoreModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.CrashReportingModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.DirectorModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.DSPGraphModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.GameCenterModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.GIModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.GridModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.HotReloadModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.ImageConversionModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.IMGUIModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.InputLegacyModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.InputModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.JSONSerializeModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.LocalizationModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.ParticleSystemModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.PerformanceReportingModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.Physics2DModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.PhysicsModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.ProfilerModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.ScreenCaptureModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.SharedInternalsModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.SpriteMaskModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.SpriteShapeModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.StreamingModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.SubstanceModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.SubsystemsModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.TerrainModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.TerrainPhysicsModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.TextCoreModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.TextRenderingModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.TilemapModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.TLSModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UI
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UIElementsModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UIElementsNativeModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UIModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UmbraModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UNETModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UnityAnalyticsModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UnityConnectModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UnityCurlModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UnityTestProtocolModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UnityWebRequestAssetBundleModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UnityWebRequestAudioModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UnityWebRequestModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UnityWebRequestTextureModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.UnityWebRequestWWWModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.VehiclesModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.VFXModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.VideoModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.VirtualTexturingModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.VRModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.WindModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++UnityEngine.XRModule
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:
+++startoptions
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\screens\startoptions\
+++movement
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\camera\movement\
+++spaceplane
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\colliders\spaceplane\
+++stab.cs
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\player\attack\stab.cs
+++Fonts
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\fonts\
+++Resources
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\resources\
+++Shaders
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\
+++Sprites
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\sprites\
+++openoptions.cs
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\screens\startoptions\openoptions.cs
+++followplayer.cs
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\camera\movement\followplayer.cs
+++dockingportcollider.cs
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\scripts\colliders\spaceplane\dockingportcollider.cs
+++LiberationSans - OFL.txt
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\fonts\liberationsans - ofl.txt
+++LineBreaking Following Characters.txt
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\resources\linebreaking following characters.txt
+++LineBreaking Leading Characters.txt
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\resources\linebreaking leading characters.txt
+++TMP_Bitmap-Custom-Atlas.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_bitmap-custom-atlas.shader
+++TMP_Bitmap-Mobile.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_bitmap-mobile.shader
+++TMP_Bitmap.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_bitmap.shader
+++TMP_SDF-Mobile Masking.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_sdf-mobile masking.shader
+++TMP_SDF-Mobile Overlay.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_sdf-mobile overlay.shader
+++TMP_SDF-Mobile SSD.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_sdf-mobile ssd.shader
+++TMP_SDF-Mobile.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_sdf-mobile.shader
+++TMP_SDF-Surface-Mobile.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_sdf-surface-mobile.shader
+++TMP_SDF-Surface.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_sdf-surface.shader
+++TMP_SDF Overlay.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_sdf overlay.shader
+++TMP_SDF SSD.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_sdf ssd.shader
+++TMP_SDF.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_sdf.shader
+++TMP_Sprite.shader
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmp_sprite.shader
+++TMPro.cginc
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmpro.cginc
+++TMPro_Mobile.cginc
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmpro_mobile.cginc
+++TMPro_Properties.cginc
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmpro_properties.cginc
+++TMPro_Surface.cginc
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\shaders\tmpro_surface.cginc
+++EmojiOne Attribution.txt
+i:{8f73439b-48d8-98fa-1e14-6ca2f3ed6541}:c:\users\finley\desktop\coding\projects\2d-sci-fi-dungeon\2d dungeon\assets\textmesh pro\sprites\emojione attribution.txt

@@ -1,0 +1,21 @@
+{
+  "store": [
+    {
+      "name": "up",
+      "value":""
+    },
+    {
+      "name": "down",
+      "value": ""
+    },
+    {
+      "name": "left",
+      "value": ""
+    },
+    {
+      "name": "right",
+      "value": ""
+    }
+  ]
+  
+}
