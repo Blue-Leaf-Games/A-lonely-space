@@ -14,8 +14,6 @@ namespace Main
         static public int playerdirection = -1;
         static public List<string> lastScene = new List<string>();
         static public int[,] Map = new int[1024, 1024];
-        static public GameObject[,] MapObjects = new GameObject[1024, 1024];
-        static public List<GameObject> AllEnemy = new List<GameObject> ();
 
         public static int listlength(List<string> listtemp)
         {
