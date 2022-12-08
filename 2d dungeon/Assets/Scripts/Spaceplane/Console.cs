@@ -1,22 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-
-namespace Main
+public class Console : MonoBehaviour
 {
+    public Rigidbody2D player;
     
-    public class Console : MonoBehaviour
+    // Start is called before the first frame update
+    void Start()
     {
-        public Rigidbody2D ConsoleSprite;
+        
+    }
 
-        public void Update()
+    // Update is called once per frame
+    void Update()
+    {
+        Debug.Log("update");
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (Input.GetMouseButtonDown(0))
         {
-            if (Input.GetKey(KeyCode.F) && Vector2.Distance(this.transform.position, ConsoleSprite.position)<=0.32)
+            Debug.Log("1");
+            Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
+            if (targetObject == this)
             {
-                publicvariables.lastScene.Add(SceneManager.GetActiveScene().name);
-                SceneManager.LoadScene("Map1");
+                Debug.Log("2");
+                if (Vector2.Distance(this.transform.position,player.transform.position) == 0.16f)
+                {
+                    Debug.Log("works");
+                }
             }
         }
     }
