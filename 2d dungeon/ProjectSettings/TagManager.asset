@@ -5,17 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - scenery
+  - players
+  - EnemyAI
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - MapObjects
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Cover
+  - EnemyAI
+  - Player
+  - Bullets
   - 
   - 
   - 
@@ -41,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Players
+    uniqueID: 2860253901
     locked: 0

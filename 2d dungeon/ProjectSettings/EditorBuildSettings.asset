@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/screens/keybindmenu.unity
     guid: c59b3e15385ab114294cb41e2e29179e
+  - enabled: 1
+    path: Assets/Scenes/gameplay/Map1.unity
+    guid: 1acf34474c55d464dbc44bb68f1cc4d5
   m_configObjects: {}
