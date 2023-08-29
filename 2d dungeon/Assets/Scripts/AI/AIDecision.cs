@@ -20,11 +20,12 @@ public class AIDecision : MonoBehaviour
     public float ShotSpeed;
     public float constz;
     public float movespeed;
+    public bool dead = false;
     private Transform NewMovePoint;
 
     private void Start()
     {
-        NewMovePoint = Instantiate(MovePoint); // instantiates (clones) and makes the movepoint independent 
+        NewMovePoint = Instantiate(MovePoint); //instantiates (clones) and makes the movepoint independent 
         NewMovePoint.parent = null;
         NewMovePoint.position = transform.position;
     }
@@ -42,7 +43,7 @@ public class AIDecision : MonoBehaviour
         if (Active) //if it has seen the player or has seen the player
         {
             
-            MovementWeight = 0; // resets weighting of decisions
+            MovementWeight = 0; //resets weighting of decisions
             AdminWeight = 0;
             ShootingWeight = 0;
             GetShootingWeight(); //weights the decisions
@@ -50,7 +51,7 @@ public class AIDecision : MonoBehaviour
             GetAdminWeight();
             
 
-            WeightedDecision(); // uses the weights to make a decision
+            WeightedDecision(); //uses the weights to make a decision
         }
     }
 
@@ -109,8 +110,8 @@ public class AIDecision : MonoBehaviour
     private void WeightedDecision()
     {
         float TotWeight = ShootingWeight + MovementWeight + AdminWeight;
-        float ChosenWeight = UnityEngine.Random.Range(0,TotWeight); // generates a random number between 0 and the total weight
-        if(ChosenWeight<=ShootingWeight)// chooses the correct weight for the random number generated
+        float ChosenWeight = UnityEngine.Random.Range(0,TotWeight);//generates a random number between 0 and the total weight
+        if(ChosenWeight<=ShootingWeight)//chooses the correct weight for the random number generated
         {
             ShootPlayer();
         }
@@ -127,7 +128,7 @@ public class AIDecision : MonoBehaviour
 
     private void AdminDecision()
     {
-        AI.Health += 5; // efectively using a healing kit
+        AI.Health += 5;//efectively using a healing kit
     }
 
     private void ShootPlayer()
@@ -148,9 +149,13 @@ public class AIDecision : MonoBehaviour
         {
             LinearAngle(transform.position, ToNodeLoc(Physics2D.OverlapCircle(this.transform.position, 64f, LayerMask.GetMask("Cover")).gameObject.transform.position));
         }
-        else if(LinearDistance(this.transform.position,Player.position)>160)
+        else if(LinearDistance(this.transform.position,Player.position)>80)
         {
+            if (!Physics2D.OverlapCircle(new Vector2(NewMovePoint.position.x, NewMovePoint.position.y) + ToNormalizedAngle(LinearAngle(transform.position, Player.transform.position)) * 16f, 7f, LayerMask.GetMask("MapObjects", "EnemyAI")))
+            {
+                //NewMovePoint.position += new Vector3((ToNormalizedAngle(LinearAngle(transform.position, Player.transform.position)) * 16f).x, (ToNormalizedAngle(LinearAngle(transform.position, Player.transform.position) + 180) * 16f).y, 0f);
 
+            }
         }
         else if (!Physics2D.OverlapCircle(new Vector2(NewMovePoint.position.x, NewMovePoint.position.y) + ToNormalizedAngle(LinearAngle(transform.position, Player.transform.position) + 180) * 16f,7f, LayerMask.GetMask("MapObjects", "EnemyAI")))
         {
@@ -198,6 +203,7 @@ public class AIDecision : MonoBehaviour
         float pos2x = position2.x;
         float pos2y = position2.y;
         float ans = 0;
+        /*
         if(pos2x>pos1x && pos2y>pos1y)
         {
             ans =  Mathf.Atan((pos2y - pos1y) / (pos2x - pos1x)) * 180 / Mathf.PI;
@@ -213,6 +219,8 @@ public class AIDecision : MonoBehaviour
         }
 
         return ans;
+        */
+        return Mathf.Atan((pos1y - pos2y) / (pos1x - pos2x)) * 180 / Mathf.PI;
     }
 
     private RaycastHit2D CastRay(Vector3 From,Vector3 Target, LayerMask LayerColliders)
@@ -232,10 +240,12 @@ public class AIDecision : MonoBehaviour
     public void TakeDmg(int dmg)
     {
         AI.Health -= dmg;
-        if (AI.Health <= 0)
+        if (AI.Health <= 0 && !dead)
         {
-            //Destroy(MovePoint.gameObject);
-            Destroy(this.gameObject);
+            Destroy(NewMovePoint.gameObject);
+            dead = true;
+            publicvariables.AllEnemy.Remove(gameObject);
+            Destroy(gameObject);
         }
     }
 }

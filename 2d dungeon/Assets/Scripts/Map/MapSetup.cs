@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using static Main.RankStructure;
 
@@ -50,14 +51,20 @@ namespace Main
         void Start()
         {
             Map = publicvariables.Map;
-            Map[0, 0] = 2;
-            Map[1, 0] = 1;
-            Map[2, 0] = 3;
-            Map[3, 0] = 1;
-            Map[4, 0] = 1;
-            Map[5, 0] = 1;
-            Map[6, 0] = 4;
-            Map[7, 0] = 5;
+
+            int y1 = 0,x1 = 0;
+            
+            foreach(string s in File.ReadAllLines(Application.dataPath + "/Maps/Map.txt"))
+            {
+                foreach(string t in s.Split(','))
+                {
+                    Map[x1, y1] = int.Parse(t);
+                    x1++;
+                }
+                y1++;
+                x1 = 0;
+            }
+
             platoon.Squads.Add(squad);
             
             for (int x = 0; x < Map.GetLength(0); x++)
