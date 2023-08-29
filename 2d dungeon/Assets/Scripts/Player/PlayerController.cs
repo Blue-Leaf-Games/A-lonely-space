@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
             Main.publicvariables.playermoving = false;
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movepoint.position + new Vector3(Input.GetAxisRaw("Horizontal") * dist, 0f, 0f), (float)Math.Round((dist/2f),2),colliders)) //TODO Fix 2.3f divider, should be 2f
+                if (!Physics2D.OverlapCircle(movepoint.position + new Vector3(Input.GetAxisRaw("Horizontal") * dist, 0f, 0f), (float)Math.Round((dist/2f),2),colliders))
                 {
                     Main.publicvariables.playermoving = true;
                     movepoint.position += new Vector3(Input.GetAxisRaw("Horizontal") * dist, 0f, 0f);
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
             }
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movepoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical") * dist, 0f), (float)Math.Round((dist/2f),2),colliders))//TODO Fix 2.3f divider, should be 2f
+                if (!Physics2D.OverlapCircle(movepoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical") * dist, 0f), (float)Math.Round((dist/2f),2),colliders))
                 {
                     Main.publicvariables.playermoving = true;
                     movepoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical") * dist, 0f);
@@ -55,15 +55,16 @@ public class PlayerController : MonoBehaviour
                     BroadcastToEnemy("Action");
                 }
             }
-            if(Input.GetMouseButtonDown(0))
+            else if(Input.GetMouseButtonDown(0))
             {
                 float RandAngle = UnityEngine.Random.Range(-5f, 5f);
                 Rigidbody2D Shot = Instantiate(Bullet);
                 Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), Shot.GetComponent<Collider2D>(),true);
                 Shot.position = this.transform.position;
-                Shot.gameObject.transform.Rotate(new Vector3(0, 0, LinearAngle(Cam.ScreenToWorldPoint(Input.mousePosition), transform.position) + RandAngle));
+                Shot.gameObject.transform.Rotate(new Vector3(0, 0, LinearAngle(Cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10)), transform.position) + RandAngle));
                 Shot.GetComponent<SpriteRenderer>().enabled = true;
-                Shot.velocity = new Vector2((Cam.ScreenToWorldPoint(Input.mousePosition).x - this.transform.position.x), (Cam.ScreenToWorldPoint(Input.mousePosition).y - this.transform.position.y)).normalized * ShotSpeed;
+                Shot.velocity = new Vector2((Cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,10)).x - this.transform.position.x), (Cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10)).y - this.transform.position.y)).normalized * ShotSpeed;
+                BroadcastToEnemy("Action");
             }
         }
     }

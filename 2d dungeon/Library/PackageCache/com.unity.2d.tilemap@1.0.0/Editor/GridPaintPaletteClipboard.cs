@@ -596,8 +596,8 @@ namespace UnityEditor.Tilemaps
 
             using (new PreviewInstanceScope(guiRect, previewUtility, paletteInstance, m_Owner.drawGizmos))
             {
+                previewUtility.Render(true);
                 RenderGrid();
-                previewUtility.Render();
                 if (m_Owner.drawGizmos)
                     Handles.Internal_DoDrawGizmos(previewUtility.camera);
             }
